@@ -1,0 +1,136 @@
+body {
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #343a40; /* Texto oscuro */
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background-color: #e9ecef; /* Fondo claro del header */
+    padding: 2rem 0;
+    text-align: center;
+}
+.hero-section {
+    background-color: #ffffff;
+    color: #343a40;
+    padding: 4rem 2rem;
+    border-bottom: 2px solid #dee2e6;
+}
+.btn-primary {
+    background-color: #6c757d; /* Gris oscuro */
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #5a6268;
+}
+.btn-secondary {
+    background-color: #adb5bd; /* Gris claro */
+    border: none;
+}
+.btn-secondary:hover {
+    background-color: #868e96;
+}
+section {
+    padding: 4rem 0;
+}
+footer {
+    background-color: #e9ecef;
+    padding: 1.5rem 0;
+}
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+}
+.card-title {
+    color: #495057;
+}
+.card-text {
+    color: #6c757d;
+}
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+}
+.navbar .nav-link {
+    color: #495057;
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+    color: #6c757d;
+}
+.circle-step {
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-number {
+    background-color: #15ec99; /* Azul Bootstrap */
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.circle-step:hover .circle-number {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
+
+.circle-step h5 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.circle-step p {
+    color: #6c757d; /* Texto tenue */
+}
+
+/* Estilo general para las tarjetas */
+#beneficios .border {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el cursor */
+#beneficios .border:hover {
+    transform: translateY(-10px); /* Elevar tarjeta */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+/* Cambiar el color del ícono al pasar el cursor */
+#beneficios .border:hover i {
+    color: #007bff; /* Azul interactivo */
+}
+
+/* Estilo para los íconos */
+#beneficios i {
+    color: #6c757d; /* Color inicial */
+    transition: color 0.3s ease-in-out;
+}
+
+#comparacion h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#comparacion ul {
+    padding: 0;
+    list-style: none;
+}
+
+#comparacion ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#comparacion ul li i {
+    font-size: 1.5rem;
+}
