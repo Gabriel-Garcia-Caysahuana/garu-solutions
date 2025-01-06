@@ -1,33 +1,74 @@
-<footer class="text-center py-4" style="background-color:rgb(220, 226, 233); color: #343a40;">
+<footer class="footer py-4">
     <div class="container">
         <!-- Navegación estilizada -->
         <nav class="mb-3">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-dark px-3" href="index.html" style="font-weight: bold;">Inicio</a>
+                    <a class="nav-link" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark px-3" href="index.html#servicios" style="font-weight: bold;">Servicios</a>
+                    <a class="nav-link" href="index.html#servicios">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark px-3" href="https://blog-garcia-caysahuana.fly.dev/contact/" style="font-weight: bold;">Contacto</a>
+                    <a class="nav-link" href="https://blog-garcia-caysahuana.fly.dev/contact/" target="_blank">Contacto</a>
                 </li>
             </ul>
         </nav>
 
         <!-- Enlaces sociales -->
-        <div class="mb-3">
-            <a href="https://www.facebook.com/profile.php?id=61571082523147" target="_blank" class="text-dark me-3" style="font-size: 1.2rem;">
+        <div class="social-links mb-3">
+            <a href="https://www.facebook.com/profile.php?id=61571082523147" target="_blank" class="social-link">
                 <i class="fab fa-facebook"></i> Facebook
             </a>
-
         </div>
 
         <!-- Información adicional -->
-        <p class="mb-1" style="font-size: 0.9rem;">&copy; 2025 Garu Solutions - Todos los derechos reservados.</p>
-
+        <p class="footer-info">&copy; 2025 Garu Solutions - Todos los derechos reservados.</p>
     </div>
 </footer>
+
+<style>
+/* Pie de Página */
+.footer {
+    background-color: #e9ecef; /* Fondo coherente */
+    color: #6c757d; /* Texto tenue */
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Separador sutil */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra superior */
+    font-size: 1.3rem; /* Tamaño del texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.footer .nav-link {
+    color: #343a40; /* Color del enlace */
+    font-weight: bold; /* Resalta los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición */
+}
+
+.footer .nav-link:hover {
+    color: #43a4d4; /* Color interactivo */
+    transform: translateY(-2px); /* Movimiento al interactuar */
+}
+
+.social-link {
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: #343a40; /* Color del enlace social */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición */
+}
+
+.social-link:hover {
+    color: #43a4d4; /* Azul interactivo */
+    transform: scale(1.1); /* Ligero aumento */
+}
+
+.footer-info {
+    font-size: 0.85rem; /* Tamaño del texto de la información */
+    color: #6c757d; /* Color tenue */
+    margin-top: 1rem;
+}
+</style>
 
 <!-- Enlace al CDN de Font Awesome para los iconos -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
