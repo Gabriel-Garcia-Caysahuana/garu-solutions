@@ -188,24 +188,44 @@ section h2 {
 }
 #servicios ul {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna por defecto */
+    gap: 1rem; /* Espaciado entre filas y columnas */
+    max-width: 900px; /* Limita el ancho de la lista */
+}
+
+@media (min-width: 768px) {
+    #servicios ul {
+        grid-template-columns: 1fr 1fr; /* Dos columnas para pantallas grandes */
+    }
 }
 
 #servicios ul li {
     font-size: 1.1rem;
-    margin-bottom: 1rem;
+    margin: 0; /* Margen eliminado, ahora gestionado por el gap de Grid */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición para movimiento y color */
+}
+
+#servicios ul li:hover {
+    background-color: #f8f9fa; /* Fondo claro al pasar el cursor */
+    transform: translateX(10px); /* Desplazamiento horizontal */
 }
 
 #servicios ul li a {
-    color: #343a40 !important; /* Fuerza el color oscuro */
-    text-decoration: none;
-    font-weight: bold;
+    color: #343a40 !important; /* Texto oscuro */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto destacado */
+    display: inline-block; /* Ajusta el tamaño del enlace */
+    transition: color 0.3s ease; /* Transición para el color */
 }
 
 #servicios ul li a:hover {
-    color: var(--hover-primary) !important;
-    text-decoration: underline;
+    color: var(--hover-primary) !important; /* Azul interactivo */
+    text-decoration: underline; /* Subrayado al pasar el cursor */
 }
+
+
 /* Estilo para la sección "Cómo trabajamos contigo" */
 #trabajamosContigo {
     background-color: #f8f9fa; /* Fondo claro */
